@@ -11,6 +11,46 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <style>
+        #interactive.viewport, #interactive.viewport canvas, video {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        
+        #interactive.viewport canvas.drawingBuffer, video.drawingBuffer {
+            margin-left: -300px;
+        } 
+        
+        #result_strip {
+            margin-top: 5px;
+            padding-top: 5px;
+        }
+
+        #result_strip ul.thumbnails {
+            width: 100%;
+            height: auto;
+        }
+
+        /* line 24, ../sass/phone/_viewport.scss */
+        #result_strip ul.thumbnails > li {
+            width: 15   0px;
+        }
+        
+        /* line 27, ../sass/phone/_viewport.scss */
+        #result_strip ul.thumbnails > li .thumbnail .imgWrapper {
+            width: 130px;
+            height: 130px;
+            overflow: hidden;
+        }
+        
+        /* line 31, ../sass/phone/_viewport.scss */
+        #result_strip ul.thumbnails > li .thumbnail .imgWrapper img {
+            margin-top: -25px;
+            width: 130px;
+            height: 180px;
+        }
+    </style>
   </head>
   <body>
     <div class="wrapper">
